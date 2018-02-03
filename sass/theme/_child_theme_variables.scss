@@ -1,0 +1,84 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+//Colors
+
+$brand-primary:         #cc0000; // Red
+$brand-secondary:       #000000; // Black
+$brand-tertiary:        #dedede; // Grey
+
+$body-color:            #464a4c; // Grey
+
+//Fonts
+$header-font:           'Raleway', sans-serif;
+$body-font:             'Open Sans', sans-serif;
+
+//Fluid Typography Variables
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 14px;
+$max_font: 18px;
+
+// Fluid Header Variables
+$mod_1: 1.2; // mobile
+$mod_2: 1.5; // desktop
+
+//Mix-Ins
+
+//All Headings
+
+@mixin headings {
+    h1, h2, h3,
+    h4, h5, h6 {
+        @content;
+    }
+}
+
+//Text Shadow
+@mixin text-shadow {
+    text-shadow: 0 0 15px #000;
+}
+
+//Drop Shadow
+@mixin shadow {
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+    box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+}
+
+//Border Radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//Typography
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
