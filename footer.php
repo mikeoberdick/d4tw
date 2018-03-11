@@ -10,15 +10,17 @@
 
 <div id="js-heightControl" style="height: 0;">&nbsp;</div>
 
-<div id = "preFooter" class = "container-fluid">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>Ready to Get Started? Call <a href="tel:2035160359" alt = "Call Designs 4 The Web" title = "Call Designs 4 The Web">203.516.0359</a></h1>
+<?php if ( !is_page_template('page-templates/service-area-template.php') ) { ?>
+	<div id = "preFooter" class = "container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Ready to Get Started? Call <a href="tel:2035160359" alt = "Call Designs 4 The Web" title = "Call Designs 4 The Web">203.516.0359</a></h1>
+				</div>
 			</div>
-		</div>
-	</div><!-- .container -->
-</div><!-- .container-fluid -->
+		</div><!-- .container -->
+	</div><!-- .container-fluid -->
+<?php } ?>
 
 <footer id="footer" class = "container-fluid">
 	<div class="container">
@@ -45,7 +47,7 @@
 				</div>
 			</div>
 
-			<div class="col-sm-12 col-md-4 contact">
+			<div class="col-sm-12 col-md-4 contact d-none d-sm-none d-md-block">
 				<a class = "footerLink" href="mailto:mike@designs4theweb.com" alt = "E-Mail Mike Oberdick of Designs 4 The Web" title = "E-Mail Mike Oberdick of Designs 4 The Web">mike@designs4theweb.com</a> | <a class = "footerLink" href="tel:2035160359" alt = "Call Mike Oberdick of Designs 4 The Web" title = "Call Mike Oberdick of Designs 4 The Web">203.516.0359</a>
 			</div>
 		</div><!-- .row -->

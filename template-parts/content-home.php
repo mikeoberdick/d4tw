@@ -5,12 +5,16 @@
 	<div class="container-fluid heroSection" style = "background-image: url('<?php echo $heroImage['url']; ?>')">
 	<div class="opacityLayer">
 		<div class = "container">
+				<div class="row">
 				<div class = "col-sm-12">
 					<h1 class = "text-center" data-aos="fade-down" data-aos-delay="500" data-aos-duration="750"><?php the_field('hero_header'); ?></h1>
 					<h5 class = "mt-3 text-center" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="750"><?php the_field('hero_content'); ?></h5>
 
-					<!-- Modal Trigger -->
-					<button type="button" class="btn btn-primary btn-lg" data-aos="zoom-in" data-aos-delay="2500" data-aos-duration="1250" data-aos-easing="ease-in-out-back" data-toggle="modal" data-target="#hpContactForm"><?php the_field('button_text'); ?></button>
+					<!-- Modal Trigger for Desktop/Tablet Site-->
+					<button type="button" class="btn btn-primary btn-lg d-none d-md-inline d-lg-inline" data-aos="zoom-in" data-aos-delay="2500" data-aos-duration="1250" data-aos-easing="ease-in-out-back" data-toggle="modal" data-target="#hpContactForm"><?php the_field('button_text'); ?></button>
+					
+					<!-- Link to contact page for mobile site -->
+					<a href = '<?php echo bloginfo('url'); ?>/contact-ct-web-designer-designs-4-the-web/'><button type="button" class="btn btn-primary btn-lg d-md-none d-lg-none" data-aos="zoom-in" data-aos-delay="2500" data-aos-duration="1250" data-aos-easing="ease-in-out-back"><?php the_field('button_text'); ?></button></a>
 
 					<!-- Modal Content -->
 					<div class="modal fade" id="hpContactForm" tabindex="-1" role="dialog" aria-labelledby="Contact Form">
@@ -25,6 +29,7 @@
 					  </div>
 					</div><!-- .modal -->
 				</div>
+				</div><!-- .row -->
 			</div>
 		</div>
 	</div><!-- .container-fluid -->

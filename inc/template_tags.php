@@ -28,18 +28,18 @@ function d4tw_post_nav() {
 				<div class="row nav-links justify-content-between">
 					<?php
 						if ( get_previous_post_link() && get_next_post_link() ) {
-							previous_post_link( '<span class="nav-previous col-sm-12 col-md-6">%link</span>', _x( '<i class="fa fa-angle-left col-sm-2"></i><span class = "col-sm-10">&nbsp;%title</span>', 'Previous post link', 'understrap' ) );
+							previous_post_link( '<span class="nav-previous col-sm-12 col-md-6 mb-3">%link</span>', _x( '<i class="fa fa-angle-left"></i><span class = "col-sm-10">&nbsp;%title</span>', 'Previous post link', 'understrap' ) );
 						}
 
 						else if ( get_previous_post_link() && ! get_next_post_link() ) {
-							previous_post_link( '<span class="nav-previous col-sm-12">%link</span>', _x( '<i class="fa fa-angle-left col-sm-1"></i><span class = "col-sm-11">&nbsp;%title</span>', 'Previous post link', 'understrap' ) );
+							previous_post_link( '<span class="nav-previous col-sm-12">%link</span>', _x( '<i class="fa fa-angle-left mr-3"></i><span>&nbsp;%title</span>', 'Previous post link', 'understrap' ) );
 						}
 						if ( get_previous_post_link() && get_next_post_link() ) {
-							next_post_link( '<span class="nav-next col-sm-12 col-md-6">%link</span>',     _x( '<span class = "col-sm-10">%title&nbsp;</span><i class="fa fa-angle-right col-sm-2"></i>', 'Next post link', 'understrap' ) );
+							next_post_link( '<span class="nav-next col-sm-12 col-md-6">%link</span>',     _x( '<span class = "col-sm-10">%title&nbsp;</span><i class="fa fa-angle-right"></i>', 'Next post link', 'understrap' ) );
 						}
 
 						else if ( ! get_previous_post_link() && get_next_post_link() ) {
-							next_post_link( '<span class="nav-next col-sm-12 col-md-6">%link</span>',     _x( '<span class = "col-sm-11">%title&nbsp;</span><i class="fa fa-angle-right col-sm-1"></i>', 'Next post link', 'understrap' ) );
+							next_post_link( '<span class="nav-next col-sm-12 col-md-6">%link</span>',     _x( '<span>%title&nbsp;</span><i class="fa fa-angle-right ml-3"></i>', 'Next post link', 'understrap' ) );
 						}
 					?>
 				</div><!-- .nav-links -->

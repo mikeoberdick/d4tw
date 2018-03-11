@@ -25,7 +25,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
-			<div class="col-md-8 content-area" id="primary">
+			<div class="col-md-12 col-lg-8 content-area" id="primary">
 				<main class="site-main" id="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>

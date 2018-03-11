@@ -6,7 +6,39 @@
 You just had a website built using WordPress…awesome!  Now it’s time for you to manage and update your site.   For someone who has used WordPress in the past they can tell you how easy it is to get started.  However, upon your first log-in to the dashboard, it can be a bit overwhelming.  There are lots of buttons and areas for you to explore and it is much easier to learn the ropes with an experienced guide.
 
 Designs 4 The Web offers a number of  WordPress training options ranging from the very basics of getting started to advanced customization of your theme.  The training is also scaleable meaning it can be done for one individual who has been designated the go to person for the website or for hundreds of employees through the use of a training module website.  For a glimpse into these video tutorials, check out the WordPress tips and tricks video tutorial series from our <a title="Designs 4 The Web on YouTube" href="https://www.youtube.com/user/Designs4TheWebLLC/" target="_blank" rel="noopener">YouTube Channel</a>.
-	</div><!-- .container -->
+
+<div class = "pageCallout mt-5">
+	<h3>How can we help?</h3>
+	<p class="mb-3">Struggling with WordPress? Let Designs 4 The Web help you to become more comfortable and confident managing your WordPress website so you can get back to more important business related tasks.</p>
+	<button class="btn btn-primary btn-lg" type="button" data-toggle="modal" data-target="#tutorialVideo">Learn More</button>
+</div>				
+<!-- Modal Content -->
+<div class="modal fade videoModal" id="tutorialVideo" tabindex="-1" role="dialog" aria-labelledby="WordPress Dashboard Overview Video">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+
+        
+<div class="modal-body">
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  		<div class="container-fluid">
+    		<div class="row">
+            	<div class="col-md-6">
+      				<h3 class="mb-3">Individualized Solutions & Support</h3>
+      				<p>Stop wasting time searching Google for answers and dump those confusing and outdated "for dummies" books. Learn WordPress through specifically tailored help sessions.</p>
+					<p>With a background in education, Designs 4 The Web is an obvious choice when it comes to helping you to setup and/or manage your newly built WordPress website.  Choose from face to face sessions, video conferencing or custom crafted video tutorials like this one that use your actual website!</p>
+      			</div>
+				<div class="col-md-6 d-none d-sm-block">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="//www.youtube.com/embed/bXK8bXHhPZk"></iframe>
+					</div>
+      			</div>
+    		</div><!-- .row -->
+    	</div><!-- .container-fluid -->
+</div><!-- .modal-body -->
+</div><!-- .modal-content -->
+</div><!-- .modal-dialog -->
+</div><!-- .modal -->
+</div><!-- .container -->
 		
 
 		<div id = "sliderWrapper" class = "container-fluid">

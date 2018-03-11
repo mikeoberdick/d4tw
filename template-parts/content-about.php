@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-12 col-md-6">
 				<?php $image = get_field('top_image'); ?>
-				<img id = "aboutImage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title = "<?php echo $image['title']; ?>">
+				<img id = "aboutImage" class = "mb-3" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title = "<?php echo $image['title']; ?>">
 			</div>
 
 			<div class="col-sm-12 col-md-6">
@@ -38,37 +38,37 @@
 		</div><!-- .row -->
 		
 		<div class = "row">
-			<div class="blurb col-sm-12 col-md-4" data-aos="zoom-in" data-aos-anchor="#example-anchor">
+			<div class="blurb col-sm-12 col-md-4 col-lg-2">
 				<img src="<?php echo get_stylesheet_directory_uri() . '/img/superhero_icons/captain_america.png';?>" alt = "Captain America" title = "Collaborative WordPress Website Development">
 				<h5>The Perfect Sidekick</h5>
 				<p>Who says bigger is always better?  Being a company of one means that we assimilate fully within your project so you can think of us as a teammate and not an outside agency.</p>
 			</div><!-- .col-sm-12 -->
 					
-			<div class="blurb col-sm-12 col-md-4">
+			<div class="blurb col-sm-12 col-md-4 col-lg-2">
 				<img src="<?php echo get_stylesheet_directory_uri() . '/img/superhero_icons/superman.png';?>" alt = "Superman" title = "Fast WordPress Website Development">
 				<h5>Faster Than A Speeding Bullet</h5>
 				<p>We know WordPress and not to brag but we're pretty good at it.  What does that mean for you?  Your project gets completed faster than a speeding bullet.</p>
 			</div><!-- .col-sm-12 -->
 
-			<div class="blurb col-sm-12 col-md-4">
+			<div class="blurb col-sm-12 col-md-4 col-lg-2">
 				<img src="<?php echo get_stylesheet_directory_uri() . '/img/superhero_icons/ironman.png';?>" alt = "Ironman" title = "The Latest WordPress Technology">
 				<h5>In-House Technology </h5>
 				<p>Many agencies use cookie cutter theme templates.  We're a bit different.  Each project gets its own custom built theme based on the latest design trends and coding standards.</p>
 			</div>
 
-			<div class="blurb col-sm-12 col-md-4">
+			<div class="blurb col-sm-12 col-md-4 col-lg-2">
 				<img src="<?php echo get_stylesheet_directory_uri() . '/img/superhero_icons/punisher.png';?>" alt = "Flash" title = "We're Lightning Fast">
 				<h5>We Won't Stop Until the Job Is Done</h5>
 				<p>Some call it perseverance, some say it's a "never say die" attitude.  We like to think it's customer service.  We won't stop until the job is done right.</p>
 			</div>
 
-			<div class="blurb col-sm-12 col-md-4">
+			<div class="blurb col-sm-12 col-md-4 col-lg-2">
 				<img src="<?php echo get_stylesheet_directory_uri() . '/img/superhero_icons/batman.png';?>" alt = "Flash" title = "We're Lightning Fast">
 				<h5>There When You Need Us</h5>
 				<p>We pride ourselves on communication and responsive action.  If you need something done.  We're on it.  If you have a question...we have an answer.  Simple, right?</p>
 			</div>
 
-			<div class="blurb col-sm-12 col-md-4">
+			<div class="blurb col-sm-12 col-md-4 col-lg-2">
 				<img src="<?php echo get_stylesheet_directory_uri() . '/img/superhero_icons/spiderman.png';?>" alt = "Flash" title = "We're Lightning Fast">
 				<h5>Collaborative "Web" Design</h5>
 				<p>Our process includes the input of our clients so that the end result is a site that is reflective of your ideas and concepts.  It's a collaborative process...start to finish.</p>

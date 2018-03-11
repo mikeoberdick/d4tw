@@ -15,24 +15,48 @@ get_header();
 		<header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/connecticut-web-design-page-header.jpg';?>)">
 			<div class="opacityLayer">
 				<div class = "titleWrapper">
-					<h1 class="entry-title page_header">WordPress Website Portfolio</h1>
+					<h1 class="entry-title page_header" data-aos="fade-down" data-aos-delay="500" data-aos-duration="750">WordPress Website Portfolio</h1>
+					<hr class = "mb-3" data-aos="fade-down" data-aos-delay="500" data-aos-duration="750">
+					<div data-aos="fade-up" data-aos-delay="1500" data-aos-duration="750">
+					<h5 class = "pageSubtitle" data-aos="fade-up" data-aos-delay="500" data-aos-duration="750">Check Out The Latest D4TW Website Projects</h5>
 				</div>
 			</div>
 		</header><!-- .entry-header -->
 
-<div class="container-fluid">
+<div id = "catNavigation" class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12 text-center mb-3" data-aos="fade-right">
 			<h2>We turn <strong>WordPress</strong> into <strong>WordPressed</strong></h2>
 		</div>
 		
-		<div class="col-sm-12 text-center mb-3 controls">
-			<button class = "btn btn-outline-primary" type="button" data-filter=".all">All Projects</button>
+		<!-- Desktop Project Categories for Sorting -->
+		<div class="col-sm-12 text-center mb-3 controls d-none d-sm-block">
+			<button class = "btn btn-outline-primary catButton" type="button" data-filter=".all">All Projects</button>
 				<?php $terms = get_terms( array ('taxonomy'=> 'project-industry', 'exclude' => '17',) ); // Get all terms for the taxonomy except for 'featured'?>
     		<?php foreach ( $terms as $term ) { ?>
-    		<button class = "btn btn-outline-primary" type="button" data-filter=".<?php echo $term->slug; ?>"><?php echo $term->name; ?></button>
+    		<button class = "btn btn-outline-primary catButton" type="button" data-filter=".<?php echo $term->slug; ?>"><?php echo $term->name; ?></button>
         	<?php } ?>
 		</div><!-- .controls -->
+
+		<!-- Mobile Project Category Dropdown for Sorting -->
+		<div class="col-sm-12 text-center mb-3 controls d-block d-sm-none">
+			<div class="dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>
+			  	<div class="dropdown-menu fade" aria-labelledby="dropdownMenuButton">
+			  		<div id = "dropdownInner">
+				  		<a class="dropdown-item catButton" data-filter=".all">All Projects</a>
+				  	<?php foreach ( $terms as $term ) { ?>
+				    	<a class="dropdown-item catButton" data-filter=".<?php echo $term->slug; ?>"><?php echo $term->name; ?></a>
+			    	<?php } ?>
+			    </div><!-- #dropdownInner -->
+			  </div><!-- .dropdown-menu -->
+			</div><!-- .dropdown -->
+		</div><!-- .controls -->
+
+		<div id="catCurrentlyShown">
+			<h5>Currently Viewing <span id = "currentCat">All Projects</span></h5>
+		</div>
+	
 	</div><!-- .row -->
 </div><!-- .container -->
 
@@ -70,7 +94,7 @@ get_header();
 						<div class="row">
 							<div class="col-sm-12 col-md-8">
 								<?php $image = get_field('project_screenshot'); ?>
-								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title = "<?php echo $image['title']; ?>">
+								<img class = "mb-3" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title = "<?php echo $image['title']; ?>">
 							</div><!-- 	.col-sm-12 -->
 							<div class="col-sm-12 col-md-4">
 								<h3 class = "mb-3"><?php the_title(); ?></h3>

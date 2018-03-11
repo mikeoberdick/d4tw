@@ -15,12 +15,12 @@ jQuery(document).ready(function() {
 	AOS.init();
 });
 
-//Match button heights on about page
-jQuery(document).ready(function() {
-	jQuery(function() {
-		jQuery('.serviceBtn').matchHeight();
-	});
-});
+// //Match button heights on about page
+// jQuery(document).ready(function() {
+// 	jQuery(function() {
+// 		jQuery('.serviceBtn').matchHeight();
+// 	});
+// });
 
 //Bootstrap Modals
 jQuery('.modal').on('shown.bs.modal', function () {
@@ -28,6 +28,30 @@ jQuery('.modal').on('shown.bs.modal', function () {
 })
 
 //Stop the YouTube video on modal close
-jQuery("#wooVideo").on('hidden.bs.modal', function (e) {
-    jQuery("#wooVideo iframe").attr("src", jQuery("#wooVideo iframe").attr("src"));
+jQuery(".videoModal").on('hidden.bs.modal', function (e) {
+    jQuery(".videoModal iframe").attr("src", jQuery(".videoModal iframe").attr("src"));
+});
+
+// Portfolio Page show the category that is being displayed after user clicks on the button or dropdown menu item on mobile
+
+jQuery(function(){
+	jQuery('.catButton').click(function(){
+	jQuery( "span#currentCat" ).text( jQuery(this).text() );
+		});
+});
+
+// Sticky Header
+
+jQuery(function(){
+  jQuery("nav").before(jQuery(".navbar").clone().addClass("fixed"));
+  jQuery("#headerLogo").attr("src","/wp-content/uploads/2017/07/ct_website_design_designs-4-the-web.png");
+  jQuery(window).scroll(function(){
+    if(jQuery(window).scrollTop() >= 55){
+      jQuery('.navbar.fixed').addClass('slideDown');
+    }
+  else{
+    jQuery('.navbar.fixed').removeClass('slideDown');
+  }
+  
+  });
 });
