@@ -9380,12 +9380,23 @@ body {
 .wrapper {
   padding: 0; }
 
+@media (max-width: 767px) {
+  #headerLogo {
+    max-width: 250px; } }
+
+@media (max-width: 575px) {
+  #headerLogo {
+    width: 200px; } }
+
 .home .wrapper-navbar nav {
   position: absolute;
   width: 100%;
   height: 80px;
-  z-index: 2;
+  z-index: 99;
   background-color: transparent; }
+  @media (max-width: 767px) {
+    .home .wrapper-navbar nav {
+      height: auto; } }
   .home .wrapper-navbar nav a {
     color: #ffffff; }
 
@@ -9402,12 +9413,19 @@ body {
       text-align: center; } }
 
 .wrapper-navbar .fixed {
-  position: fixed;
+  position: fixed !important;
   top: -90px;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
   transition: 0.4s top cubic-bezier(0.3, 0.73, 0.3, 0.74);
-  background-color: rgba(0, 0, 0, 0.75); }
+  background-color: rgba(0, 0, 0, 0.75) !important; }
+  @media (max-width: 767px) {
+    .wrapper-navbar .fixed {
+      top: -101px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper-navbar .fixed {
+    top: -120px; } }
   .wrapper-navbar .fixed a {
     color: #fff; }
 
@@ -9723,6 +9741,9 @@ header {
         margin-top: 15px; }
         #portfolio .project .overlay .content i:hover {
           background-color: rgba(204, 0, 0, 0.5); }
+
+.home .grw-slider-prev, .home .grw-slider-next {
+  display: none; }
 
 #serviceAreas .heroSection {
   background-attachment: fixed;

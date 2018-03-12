@@ -90,8 +90,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class = "text-center mb-3" data-aos="fade-left" data-aos-duration="1000">What Clients Are Saying</h2>
-				<?php echo do_shortcode('[google-reviews-pro place_name="Designs 4 The Web" place_id=ChIJ60qMF1re54kRPFkGH-ZzlgA auto_load=true rating_snippet=true view_mode=slider open_link=true nofollow_link=true]'); ?>
+				<h2 class = "text-center mb-3" data-aos="zoom-in" data-aos-duration="1000">What Clients Are Saying</h2>
+				<?php echo do_shortcode('[google-reviews-pro place_name="Designs 4 The Web" place_id=ChIJ60qMF1re54kRPFkGH-ZzlgA auto_load=true rating_snippet=true view_mode=slider open_link=true nofollow_link=true slider_hide_pagin=true]'); ?>
+
 			</div>
 		</div><!-- .row -->
 	</div><!-- .container -->	
@@ -100,7 +101,7 @@
 
 <div id = "portfolio" class="container-fluid hpSection pt-5 pb-5">
 	<div class="row">
-		<div class="col-sm-12 text-center mb-3" data-aos="fade-right" data-aos-duration="1000">
+		<div class="col-sm-12 text-center mb-3" data-aos="zoom-in" data-aos-duration="1000">
 			<h2>We turn <strong>WordPress</strong> into <strong>WordPressed</strong></h2>
 		</div>
 
