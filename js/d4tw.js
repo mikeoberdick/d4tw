@@ -43,10 +43,11 @@ jQuery(function(){
 // Sticky Header
 
 jQuery(function(){
-  jQuery("nav").before(jQuery(".navbar").clone().addClass("fixed"));
+  jQuery(".navbar").before(jQuery(".navbar").clone().addClass("fixed"));
+  jQuery('.navbar:not(.fixed)').addClass( "orginalNav" );
   jQuery("#headerLogo").attr("src","/wp-content/uploads/2017/07/ct_website_design_designs-4-the-web.png");
   jQuery(window).scroll(function(){
-    if(jQuery(window).scrollTop() >= 55){
+    if(jQuery(window).scrollTop() >= 80){
       jQuery('.navbar.fixed').addClass('slideDown');
     }
   else{

@@ -49,7 +49,7 @@
 				
 				<div class="card-block">
 	      			<div class = "planPrice"><span>$30</span>/mo</div>
-	      			<p><small>$30/yr</small></p>
+	      			<p><small>$300/yr</small></p>
 	      			<hr>
 			        <ul>
 			          	<li><span><strong>Weekly</strong> Off-Site Backups</span></li>

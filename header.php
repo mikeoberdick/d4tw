@@ -14,7 +14,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/wp-understrap/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/themes/wp-understrap/favicons/favicon-32x32.png">
@@ -35,6 +35,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php wp_head(); ?>
 	
 </head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48075996-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-48075996-2');
+</script>
 
 <body <?php body_class(); ?>>
 

@@ -68,7 +68,7 @@ Designs 4 The Web offers a number of  WordPress training options ranging from t
 				</div><!-- .container -->
 			</div><!-- .container-fluid -->
 
-<div class="container">
+<div class="container mb-5">
 	<h3>How Do I Hire a WordPress trainer?</h3>
 If you are looking for WordPress training in Connecticut, there are several considerations.  First and foremost, you will want to work with someone who knows the ins and outs of WordPress.  For example, all of the sites that we setup come with a personalized setup that brands their dashboard and removes any unnecessary functionality so that there is less to navigate.  This is something that has gotten very good reviews.  You will also want to make sure that the WordPress training is available at times when your staff will need training.  We have found that our personalized tutorial videos are excellent for small businesses who want to be able to learn at their own pace on their own time.  Of course you will also want to think about cost when looking for someone offering WordPress training.  It is our belief that the client is entitled to training as part of the development of the site so it is included in the cost of the site development.
 
